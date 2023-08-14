@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="achievements" style="background-color: #f0f0f0;">
+    <div class="container">
+        <h2 class="mb-4 text-center">Our Achievements</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='dipp_recognition.jpg') }}" alt="DIPP Recognition" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">DIPP recognized Startup</h4>
+                        <p class="card-text">Department for Promotion of Industry and Internal Trade (DIPP) has recognized Sarva Suvidhaen Pvt Ltd as a startup.</p>
+                        <p class="card-text">The name of the company was renamed from Atul and Arun Global Services Pvt Ltd to Sarva Suvidhaen Pvt Ltd.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='startup_bihar.jpg') }}" alt="Startup Bihar Recognition" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Startup Bihar recognized Startup</h4>
+                        <p class="card-text">We received a support fund of 10 Lakhs from Govt. of Bihar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more achievements here -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='iitp_ic_incubation.jpg') }}" alt="Incubated at IITP-IC" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Incubated at IITP-IC</h4>
+                        <p class="card-text">Sarva Suvidhaen Pvt Ltd is incubated in the Incubation Center of the Indian Institute of Technology, Patna (IITP).</p>
+                        <p class="card-text">We got a seed fund of 10 Lakhs from IITP-IC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Additional custom styles for Achievements section */
+    #achievements {
+        padding: 60px 0; /* Add padding to the top and bottom of the section */
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    #achievements h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #333;
+        text-transform: uppercase; /* Convert the heading to uppercase */
+    }
+
+    #achievements .row {
+        margin: 0 -15px; /* Adjust the row margin to handle card spacing */
+    }
+
+    #achievements .col-md-4 {
+        padding: 15px; /* Add padding to the columns for spacing */
+    }
+
+    #achievements .card {
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s; /* Add a smooth transition on hover */
+        height: 100%; /* Make sure the cards have the same height */
+        border-radius: 10px;
+    }
+
+    #achievements .card:hover {
+        transform: translateY(-5px); /* Lift the card slightly on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #achievements .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    #achievements .card-text {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    @media (max-width: 767.98px) {
+        #achievements .col-md-4 {
+            padding: 10px; /* Adjust column padding for smaller screens */
+        }
+        #achievements h2 {
+            font-size: 2rem; /* Reduce heading font size for smaller screens */
+        }
+        #achievements .card-title {
+            font-size: 1.25rem; /* Reduce card title font size for smaller screens */
+        }
+    }
+
+</style>
+
+{% endblock %}
