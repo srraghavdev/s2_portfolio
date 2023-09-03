@@ -109,21 +109,12 @@
 
 <body style="background: rgb(92,119,248);
 background: linear-gradient(236deg, rgba(92,119,248,1) 0%, rgba(182,193,252,1) 35%, rgba(231,234,254,1) 100%); color: #020a31;">
-
-    <!-- navbar -->
-    <!-- <nav class="navbar navbar-dark d-md-block d-none navbar-expand-lg p-0">
-        <div class="container text-white">
-            <a href="tel:+916200500903" class="nav-link float-start small"><i class="bi bi-phone"></i> +916200500903</a>
-            <a href="" class="nav-link float-end small"><i class="bi bi-envelope"></i> jayantraj66041@gmail.com</a>
-        </div>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand my-0">
                 <img src="static/logo.png" style="width: 70px;" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
@@ -136,6 +127,9 @@ background: linear-gradient(236deg, rgba(92,119,248,1) 0%, rgba(182,193,252,1) 3
                     </li>
                     <li class="nav-item">
                         <a href="teams.html" class="nav-link"><i class="bi bi-people"></i> Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link"><i class="bi bi-diagram-3-fill"></i> Careers</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link"><i class="bi bi-telephone"></i> Contact Us</a>
@@ -273,43 +267,6 @@ background: linear-gradient(236deg, rgba(92,119,248,1) 0%, rgba(182,193,252,1) 3
                 
             </div>
         </div>
-        <!-- <div class="row my-4 text-white">
-            <div class="col-lg-12">
-                <h3>Services</h3>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card mb-3" style="background-color: #ff33ff;">
-                            <img src="static/projects/project1.jpg" class="w-100 card-img-top"
-                                style="width: 100px; height: 250px; object-fit: cover; object-position: center;" alt="">
-                            <div class="card-body text-white">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolor sed odit numquam
-                                assumenda molestiae officia, voluptas cum
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card mb-3" style="background-color: #ff33ff;">
-                            <img src="static/projects/project2.jpg" class="w-100 card-img-top"
-                                style="width: 100px; height: 250px; object-fit: cover; object-position: center;" alt="">
-                            <div class="card-body text-white">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolor sed odit numquam
-                                assumenda molestiae officia, voluptas cum
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card mb-3" style="background-color: #ff33ff;">
-                            <img src="static/projects/project3.jpg" class="w-100 card-img-top"
-                                style="width: 100px; height: 250px; object-fit: cover; object-position: center;" alt="">
-                            <div class="card-body text-white">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolor sed odit numquam
-                                assumenda molestiae officia, voluptas cum
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="row my-4">
             <div class="col-lg-12">
                 <h3>Testimonials</h3>
@@ -463,7 +420,6 @@ background: linear-gradient(236deg, rgba(92,119,248,1) 0%, rgba(182,193,252,1) 3
 
             let graphics = ['first', 'second', 'third', 'forth', 'fifth', 'sixth', 'seventh'];
             let randomIndex = Math.floor(Math.random() * (6 - 0 + 1) + 0);
-            console.log(randomIndex);
             $("#"+graphics[randomIndex]).removeClass("d-none");
         })
 
